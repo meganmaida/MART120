@@ -1,0 +1,118 @@
+
+//head
+var headX = 300;
+var headDirection = 1
+//eyebrows
+var eyeY = 7
+var eyeDirection = 1
+
+var footX = 185
+var footY = 500
+var footDirection = 2
+
+
+
+
+
+
+function setup ()
+    {
+        createCanvas (600, 600);
+    }
+ function draw ()
+    {
+     background (200, 245, 330);
+     //ground
+        fill ("green");
+    rect (0, 470, 600, 600);
+    //hat
+    triangle (320, 30, 192, 200, 400, 200)
+    //hatball
+        fill ("yellow")
+    circle (320, 32, 60);
+    //head
+        fill ("pink");
+    ellipse (headX, 350, 280, 320);
+    headX += headDirection;
+    if(headX <= 100 || headX >= 460 )
+    {
+        headDirection *= -1;
+    }
+    //rightarm
+    ellipse (470, 330, 110, 90);
+        fill ("red")
+    //rightfoot
+    ellipse (420, 500, 110, 95);
+
+    //leftfoot
+    ellipse (footX, footY, 110, 95);
+    footX += -footDirection;
+    if(footX <= 125 || footX >= 545 )
+    {
+        footDirection *= -1;
+    }
+    footY +=footDirection;
+    if(footY <= 0 || footY >= 0)
+    
+
+    //leftarm
+        rotate(radians(-35))
+        fill ("pink");
+    ellipse (-50, 310, 90, 110);
+    //hatbase
+        fill ("yellow");
+        rotate(radians(39))
+    rect (205, 170, 230, 60)
+    //righteye
+        fill ("black")
+    ellipse (360, 305, 30, 60)
+    //lefteye
+    ellipse (295, 303, 30, 60)
+        fill ("white")
+    //righteyecenter
+    ellipse (360, 295, 27, 33)
+    //lefteyecenter
+    ellipse (295, 293, 27, 33)
+        fill ("black")
+        rotate(radians(35))
+    //righteyebrow
+
+    rect (448,eyeY,7,50)
+   
+    eyeY += -eyeDirection;
+
+    
+        rotate(radians(-75))
+    //lefteyebrow
+    rect (46, 388, 7, 50)
+        fill ("maroon")
+        rotate(radians(35))
+    //mouth
+    ellipse (290, 406, 60, 40)
+        fill ("#fae")
+    //tongue
+    ellipse (290, 415, 40, 20)
+    //leftcheek
+    ellipse (220, 370, 40, 20)
+    //rightcheek
+    ellipse (365, 385, 40, 20)
+    rotate (radians(1))
+        fill ("gray")
+    //sword
+    quad (110, 280, 110, 100, 160, 40, 135, 270)
+    //vline
+    line (118, 280, 140, 85)
+    //hline
+    line (120, 100, 150, 100)
+        fill ("blue")
+    //handle
+    quad (100, 300, 70, 220, 120, 260, 190, 250)
+        fill ("black")
+        
+    text('This is Kirby. Kirby is my spirit animal, therefore, he is my representation of a self portrait', 10, 10, 70);
+    text('Megan Maida', 520, 590)
+    }
+       
+     
+     
+        
