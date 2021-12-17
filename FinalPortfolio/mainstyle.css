@@ -1,0 +1,33 @@
+html { 
+  
+    background: url(flower.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+body {
+    background-color: rgb(184, 164, 139);
+    color: rgb(47, 48, 49);
+    font-size: xx-large;
+}
+
+.page {
+    color:crimson;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#specificColor {
+    color: blue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+
+
+
+
+        background-color: white !important;
+    
+        color: black !important;
+    
+    }
